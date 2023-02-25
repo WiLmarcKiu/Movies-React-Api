@@ -2,7 +2,7 @@ import "../assets/css/heroSection.css";
 
 const HeroSection = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <main className="content">
         <h1>
           Nonton Film Gratis Tanpa <span>Karcis</span>

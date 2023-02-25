@@ -1,0 +1,53 @@
+.trending {
+    padding: 5rem 7% 1.4rem;
+}
+
+.trending h2 {
+    font-size: 2.2rem;
+    color: #74191E;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.trending h2 span {
+    color: #fff;
+}
+
+.trending .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.trending .row .movie-card {
+    text-align: center;
+    margin: 1.2rem;
+    background: #fff;
+    padding: 0.5rem 0.5rem 1rem;
+    border-radius: 5px;
+    color: #000;
+}
+
+.trending .row .movie-card .movie-card-image {
+    width: 220px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.trending .row .movie-card .movie-card-title {
+    margin-top: 0.6rem;
+    line-height: 1.5rem;
+    max-width: 220px;
+}
+
+.trending .row .movie-card .language span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.trending .row .movie-card .movie-card-view span {
+    color: #74191E;
+    font-weight: bold;
+}
