@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/github.io/Movies-React-Api/static/css/main.81a587cb.css",
-    "main.js": "/github.io/Movies-React-Api/static/js/main.1d3eb25d.js",
-    "static/js/787.28ba1a2f.chunk.js": "/github.io/Movies-React-Api/static/js/787.28ba1a2f.chunk.js",
-    "static/media/landing.jpg": "/github.io/Movies-React-Api/static/media/landing.14c17b87109f6cd52b5c.jpg",
-    "index.html": "/github.io/Movies-React-Api/index.html",
-    "main.81a587cb.css.map": "/github.io/Movies-React-Api/static/css/main.81a587cb.css.map",
-    "main.1d3eb25d.js.map": "/github.io/Movies-React-Api/static/js/main.1d3eb25d.js.map",
-    "787.28ba1a2f.chunk.js.map": "/github.io/Movies-React-Api/static/js/787.28ba1a2f.chunk.js.map"
+    "main.css": "/Movies-React-Api/static/css/main.39dd6a65.css",
+    "main.js": "/Movies-React-Api/static/js/main.02a90743.js",
+    "static/js/787.28ba1a2f.chunk.js": "/Movies-React-Api/static/js/787.28ba1a2f.chunk.js",
+    "static/media/landing.jpg": "/Movies-React-Api/static/media/landing.14c17b87109f6cd52b5c.jpg",
+    "index.html": "/Movies-React-Api/index.html",
+    "main.39dd6a65.css.map": "/Movies-React-Api/static/css/main.39dd6a65.css.map",
+    "main.02a90743.js.map": "/Movies-React-Api/static/js/main.02a90743.js.map",
+    "787.28ba1a2f.chunk.js.map": "/Movies-React-Api/static/js/787.28ba1a2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81a587cb.css",
-    "static/js/main.1d3eb25d.js"
+    "static/css/main.39dd6a65.css",
+    "static/js/main.02a90743.js"
   ]
 }
