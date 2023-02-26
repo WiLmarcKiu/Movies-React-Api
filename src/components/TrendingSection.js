@@ -1,28 +1,27 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import "../assets/css/trendingSection.css";
-import batmanImage from "../assets/movies-img/batman.jpg";
-import antmanImage from "../assets/movies-img/ant-man.jpg";
-import drstrangeImage from "../assets/movies-img/dr-strange.jpg";
-import flashImage from "../assets/movies-img/flash.jpg";
-import hulkImage from "../assets/movies-img/hulk.jpg";
-import supermanImage from "../assets/movies-img/superman.jpg";
-import thorImage from "../assets/movies-img/thor.jpg";
-import wolverineImage from "../assets/movies-img/wolverine.jpg";
+// import batmanImage from "../assets/movies-img/batman.jpg";
+// import antmanImage from "../assets/movies-img/ant-man.jpg";
+// import drstrangeImage from "../assets/movies-img/dr-strange.jpg";
+// import flashImage from "../assets/movies-img/flash.jpg";
+// import hulkImage from "../assets/movies-img/hulk.jpg";
+// import supermanImage from "../assets/movies-img/superman.jpg";
+// import thorImage from "../assets/movies-img/thor.jpg";
+// import wolverineImage from "../assets/movies-img/wolverine.jpg";
 import axios from "axios";
 
 const TrendingSection = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_BASE_URL}/discover/movie`, {
+    axios.get(`${process.env.REACT_APP_BASE_URL}/discover/movie`, {
         params: {
           api_key: process.env.REACT_APP_TMDB_KEY,
         },
-      })
-      .then((response) => {
+    }).then((response) => {
         setMovies(response.data.results);
-      });
+      }).catch((error) => console.log(error));
   }, []);
 
   return (
@@ -35,17 +34,11 @@ const TrendingSection = () => {
         {movies.map((result, index) => {
           return (
             <div className="movie-card" key={index}>
-              <img
-                src={`${process.env.REACT_APP_IMG_URL}/${result.poster_path}`}
-                className="movie-card-image"
-              />
+              <img src={`${process.env.REACT_APP_IMG_URL}/${result.poster_path}`}
+                className="movie-card-image" />
               <h3 className="movie-card-title">{result.title}</h3>
-              <p className="language">
-                Language : <span>{result.original_language}</span>
-              </p>
-              <p className="movie-card-view">
-                View : <span>{result.popularity}</span>
-              </p>
+              <p className="language">Language : <span>{result.original_language}</span></p>
+              <p className="movie-card-view">View : <span>{result.popularity}</span></p>
             </div>
           );
         })}
